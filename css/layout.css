@@ -1,0 +1,18 @@
+body{
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    color: #333;
+    letter-spacing: -0.085em;
+    font-weight: 200;
+    font-weight: 400;
+}
+p, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd{ magin:0; padding:0;}
+li, dl{ list-style: none;}
+a{ text-decoration: none; color:#333}
+
+/* 공통클래스 */
+.bg-black{
+    background-color: black !important;
+}
+.section{
+    height: 100vh;
+}

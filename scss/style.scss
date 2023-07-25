@@ -1,0 +1,56 @@
+#hd{
+    a{
+        color: var(--ycongcolor);
+    }
+    .allMenu{
+        &:collapsed{
+
+        }
+        &:not(.collapsed){
+            span{
+            &:after{
+               transform: rotate(-45deg);
+               bottom: 9px;
+              
+            }
+            &:before{
+               
+                transform: rotate(45deg);
+                top: 5px;
+               
+            }
+        } 
+        }
+        span{
+            background-color: none;
+            position: relative;
+            height: 0.8em;
+            &:after,
+            &:before{
+                content: "";
+                position: absolute;
+                left:0;               
+                right: 0;
+                height: 2px;
+                background-color: white;
+                transition: 0.5s;
+            }  
+            &:after{
+                bottom: 0;
+            }
+            &:before{
+               
+                top: 0;
+               
+            }
+        }
+        
+    }
+
+    #navbarSupportedContent.show{
+        height: 89vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
